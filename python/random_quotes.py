@@ -2,4 +2,4 @@ import random
 
 mylist=["ruban","durai","Deepika","kavitha","hari"]
 
-print(random.choice(mylist))
+py-script.write("mytext",(random.choice(mylist)))
