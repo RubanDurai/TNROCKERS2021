@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
 #block access to the file style.css ; permit access to all other files 
-<files style.css >
+<files tvserials-tvshows.html >
 Order Allow,Deny
 Deny from all 
 </files> 
