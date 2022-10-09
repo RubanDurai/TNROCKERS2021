@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
-  </head>
+ <title>Video Player plyr.js</title>
+ <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+ <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+</head>
 <body>
-  <div class='video'>
-  <script src="https://use.fontawesome.com/20603b964f.js"></script>
-<script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
-    <script type="text/javascript">jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';</script><div id="myElement"></div><script type="text/javascript">
-              jwplayer("myElement").setup({
-                image: "https://telegra.ph/file/d21139fa9c1540056a5a3.jpg",
-                  aspectratio: "16:9",
-                width: '100%',
-                aspectratio: '16:9',
-                  autostart: false,
-        file : 'http://50.7.237.4:8080/STARVIJAYHD/tracks-v1a1/index.m3u8'
+ <h1></h1>
+
+
+ <div class="container">
+ <video controls crossorigin playsinline poster="">
+   <source src="http://50.7.237.4:8080/STARVIJAYHD/tracks-v1a1/index.m3u8" type="video/mp4" size="480">
+   <!-- Fallback for browsers that don't support the <video> element -->
+   <a href="" download>Download</a>
+ </video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+
+<style type="text/css">
+ .container {
+ margin: 50px auto;
+ max-width: 500px;
+}
+</style>
+
+<script type="text/javascript">
+ const player = new Plyr('video', {captions: {active: false}});
+
+// Expose player so it can be used from the console
+window.player = player;
+</script>
+
 </body>
 </html>
