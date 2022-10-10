@@ -34,3 +34,9 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
         Header set Access-Control-Allow-Origin "*"
     </FilesMatch>
 </IfModule>
+
+RewriteCond %{REQUEST_FILENAME} !\.(ico?n|img|gif|jpe?g|png|css|map)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !\.js(\?.*)?$ [NC]
+RewriteCond %{REQUEST_FILENAME} !\.(eot|svg|ttf|woff2?)(\?.*)?$ [NC]
+# Comment this line if you wish to make possible to access the /libraries folder by url.
+RewriteRule . - [F]
