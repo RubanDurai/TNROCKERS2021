@@ -1,5 +1,4 @@
-<style>
-        * {
+       * {
             font-family: opensans, Verdana, Arial, poppins;
             margin: 0;
             padding: 0;
@@ -92,5 +91,3 @@
         @font-face {
         	font-family: 'meeraInimai-Regular';
             src: url(/fonts/MeeraInimai-Regular.ttf) ;
-    </style>
- 
