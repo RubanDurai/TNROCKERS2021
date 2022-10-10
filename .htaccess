@@ -22,3 +22,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
     # Remove "includeSubDomains" if you don't want to enforce HSTS on all subdomains
     Header always set Strict-Transport-Security "max-age=31536000;includeSubDomains"
 </IfModule>
+
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+
+# Force UTF-8 for a number of file formats
+AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|otf|ttc|ttf|woff|woff2)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
