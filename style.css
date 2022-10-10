@@ -40,10 +40,12 @@
               padding: 8px;
          }
         p {
-           margin : 3px;
+           margin : 6px 3px;
         }
         h4{text-align:center;}
-        header{margin-bottom: 5px;}
+        header{
+              margin-bottom: 5px;
+        }
         .item{
            padding: 5px;
            margin-top : 5px;
