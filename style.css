@@ -47,7 +47,9 @@
         p {
            margin : 8px 3px;
         }
-        h4{text-align:center;}
+        h4{
+          text-align:center;
+         }
         header{margin-bottom: 5px;}
         .item{
            padding: 5px;
