@@ -12,16 +12,8 @@ Order Allow,Deny
 Deny from all 
 </files> 
 
-RewriteEngine on
-RewriteCond %{HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-# Note: It’s also recommended to enable HTTP Strict Transport Security (HSTS)
-# on your HTTPS website to help prevent man-in-the-middle attacks.
-<IfModule mod_headers.c>
-    # Remove "includeSubDomains" if you don't want to enforce HSTS on all subdomains
-    Header always set Strict-Transport-Security "max-age=31536000;includeSubDomains"
-</IfModule>
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
 
 # Use UTF-8 encoding for anything served text/plain or text/html
 AddDefaultCharset utf-8
