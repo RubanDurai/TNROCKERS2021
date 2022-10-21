@@ -1,5 +1,5 @@
-       * {
-            font-family: opensans, Verdana, Arial, poppins;
+      * {
+            font-family: sans serif, opensans, Verdana, Arial, poppins;
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
@@ -7,13 +7,13 @@
             scroll-padding-top: 20px;
             text-transformer: uppercase;
             list-style-type : none;
-            font-size : 12px;
+            
          }
          ::selection {
          	color: white ;
              background-color: #e52165;
          }
-        li {
+      .navi ul li a {
             color: white;
         }
  
@@ -41,6 +41,7 @@
             padding: 3px;
             
          }
+         .post ul li p strong,a {font-size:16px;}
         .navi ul li a {
               text-decoration: none;
               padding: 8px;
@@ -48,9 +49,7 @@
         p {
            margin : 8px 3px;
         }
-        h4{
-          text-align:center;
-         }
+        h4{text-align:center;}
         header{margin-bottom: 5px;}
         .item{
            padding: 5px;
@@ -80,7 +79,7 @@
         #myquote{
         	color: #be1558;
             font-weight: bold;
-            font-family: 'meeraInimai-Regular';
+            font-family: 'Uni-Tamil.ttf';
         }
         footer{
         	background-color: #EEF1F7;
@@ -92,5 +91,95 @@
         	background-color: #EEF1F7;
         }
         @font-face {
-        	font-family: 'meeraInimai-Regular';
-            src: url(/fonts/MeeraInimai-Regular.ttf) ;
+        	font-family: 'Uni-Tamil.ttf';
+            src: url(/storage/emulated/0/TNROCKERS2021/fonts/Uni-Tamil.ttf) ;}
+         .border{
+        	color: #828E99;
+            background-color: #3A5EA4;
+            margin : 0px 0px 4px;
+            padding: 12px 16px;
+            display : flex;
+         }
+        .userimg {
+        	background: #0000;
+            display: flex ;
+            object-fit: cover;
+            vertical-align: top;
+            height: 38px ;
+            width: 38px;
+            border-radius : 25px;
+        	}
+         .user{
+         	color:#829E99;
+             display: inline;
+             margin: 0 0 0 15px;
+         	}
+         .border a{
+         	text-decoration: none;
+         	}
+         .page {
+         	border-style: ridge;
+             padding : 10px;
+             margin : 5px;
+         	}
+         .border .batch{
+         	align-items: center;
+             display:flex;
+             justify-content:center;
+             position:absolute;
+             top:255px;
+             left:12px;
+             height:20px;
+             vertical-align: middle;
+             }
+             .head {
+               background-color: #0A2E50; 
+               color: white;
+               margin-top: 0px;
+               margin-bottom: 1px;
+               margin-right: 0px;
+               margin-left: 0px;
+               padding-top: 12px;
+               padding-bottom: 12px;
+               padding-left: 13px;
+               padding-right: 13px;
+               font-size: 14px;
+               font-weight: normal;
+               border-top-width: 1px;
+               border-top-color: rgba(0,0,0,0.1);
+               border-top-style: solid;
+               border-bottom-width: 1px;
+               border-bottom-color: rgba(0,0,0,0.1);
+               border-bottom-style: solid;
+               }
+               .dataitem{
+               	border-top-color: rgba(0,0,0,0.1);
+                   border-right-color: rgba(0,0,0,0.1);
+                   border-bottom-color: rgba(0,0,0,0.1);
+                   border-left-color: rgba(0,0,0,0.1);
+                   border-top-style: solid;
+                   border-right-style: solid;
+                   border-bottom-style: solid;
+                   border-left-style: solid;
+                   border-top-width: 1px;
+                   border-right-width: 0px;
+                   border-bottom-width: 1px;
+                   border-left-width: 0px;
+                   display:flex;
+                   position:relative;
+           	 }
+                i.bx.bxs-chat {
+               	margin: 5px;
+                   background-color: #3A5EA4;
+                   color:white;
+                   font-size:12px;
+                   padding:3px;
+                   border-radius:4px;
+             	}
+                 h4 a{
+               	margin:5px;
+                   color:#00CBFF;
+                 }
+                 h4 a:hover{
+                 	color:blue;
+                 }
