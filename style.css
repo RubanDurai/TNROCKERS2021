@@ -13,14 +13,17 @@
          	color: white ;
              background-color: #e52165;
          }
-      .navi ul li a {
+        .navi ul li a {
             color: white;
+            display:flex;
+            width: 25px;
+            height: 30px;
         }
  
         .navi {
-            padding: 8px;
             background-color: #1265A1;
             color: #FFFFFF;
+            
         }
         .logo {
             background-color: #009EED;
@@ -37,17 +40,17 @@
          }
         .post {
             margin: 10px;
-            border-style : ridge;
-            padding: 3px;
+           <!-- border-style : ridge; -->
+            padding: 3px; 
             
          }
-         .post ul li p strong,a {font-size:16px;}
+        .post ul li p strong,a {font-size:14px;}
         .navi ul li a {
               text-decoration: none;
-              padding: 8px;
+              padding: 8px ;
          }
         p {
-           margin : 8px 3px;
+           margin : 8px 9px;
         }
         h4{text-align:center;}
         header{margin-bottom: 5px;}
@@ -92,7 +95,7 @@
         }
         @font-face {
         	font-family: 'Uni-Tamil.ttf';
-            src: url(/fonts/Uni-Tamil.ttf) ;}
+            src: url(/storage/emulated/0/TNROCKERS2021/fonts/Uni-Tamil.ttf) ;}
          .border{
         	color: #828E99;
             background-color: #3A5EA4;
