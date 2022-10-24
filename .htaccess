@@ -33,5 +33,14 @@ RewriteCond %{REQUEST_FILENAME} !\.(eot|svg|ttf|woff2?)(\?.*)?$ [NC]
 # Comment this line if you wish to make possible to access the /libraries folder by url.
 RewriteRule . - [F]
 
+# Canonical https/www
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 RewriteEngine On
 RewriteRule ^source-directory/(.*) /target-directory/$1 [R=301,L]
